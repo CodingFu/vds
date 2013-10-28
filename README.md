@@ -110,3 +110,27 @@ $ sudo apt-get -y install nginx
 ```
 $ sudo apt-get install mysql-server mysql-client libmysqlclient-dev
 ```
+
+### rbenv
+
+```
+$ curl -L https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
+```
+
+and add the following lines to beginning of your .bashrc
+```
+export RBENV_ROOT="${HOME}/.rbenv"
+
+if [ -d "${RBENV_ROOT}" ]; then
+  export PATH="${RBENV_ROOT}/bin:${PATH}"
+  eval "$(rbenv init -)"
+fi
+```
+
+```
+$ source ~/.bashrc
+$ rbenv install 2.0.0-p247
+$ rbenv gloval 2.0.0-p247
+$ gem install bundler --no-ri --no-rdoc
+$ rbenv rehash
+```
