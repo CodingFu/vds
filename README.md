@@ -131,7 +131,7 @@ then, run:
 ```
 $ source ~/.bashrc
 $ rbenv install 2.0.0-p247
-$ rbenv gloval 2.0.0-p247
+$ rbenv global 2.0.0-p247
 $ gem install bundler --no-ri --no-rdoc
 $ rbenv rehash
 ```
