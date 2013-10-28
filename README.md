@@ -127,6 +127,7 @@ if [ -d "${RBENV_ROOT}" ]; then
 fi
 ```
 
+then, run: 
 ```
 $ source ~/.bashrc
 $ rbenv install 2.0.0-p247
